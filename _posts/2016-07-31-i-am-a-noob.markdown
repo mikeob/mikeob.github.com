@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "I am a noob"
+date:   2016-07-31 17:29:06 -0400
+---
+
+...at making websites, at least.
+
+This so far has been pretty fun in terms of learning, though. Jekyll required an hour or two to get it running smoothly on windows, and then I started into actually making the site.
+
+Amusingly, I spent about an hour looking through CSS libraries to find some to use and then fought with Jekyll to import them properly, only to later trash all of them and roll my own CSS for the most part.
+
+Now to make things not look like complete butts.

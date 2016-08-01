@@ -1,0 +1,97 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Variables for font folders
+$fa-font-path:  "../fonts/font-awesome";
+
+@import "libs/font-awesome/font-awesome";
+
+// Colors
+$color-lost0: #5D4157;
+$color-lost1: #838689;
+$color-lost2: #A8CABA;
+$color-lost3: #CAD7B2;
+$color-lost4: #EBE3AA;
+
+$color-link: $color-lost2;
+$color-link-hover: $color-lost3;
+
+$sidebar-padding: 220px;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $color-lost4;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $sidebar-padding;
+
+  padding: 20px;
+  background-color: $color-lost0;
+  color: $color-lost2;
+
+  h1 {
+    color: $color-lost1;
+  }
+}
+
+
+.main-content {
+  top: 0;
+  left: 0;
+
+  padding: 0px 20px 0px $sidebar-padding + 20px;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+p {
+  margin-top: 0; }
+
+  /* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: $color-link;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color-link-hover; }
