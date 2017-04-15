@@ -8,16 +8,9 @@ $fa-font-path:  "../fonts/font-awesome";
 @import "libs/font-awesome/font-awesome";
 
 // Colors (http://www.colourlovers.com/palette/944213/forever_lost)
-$color-lost0: #5D4157;
-$color-lost1: #838689;
-$color-lost2: #A8CABA;
-$color-lost3: #CAD7B2;
-$color-lost4: #EBE3AA;
-
-$color-link: $color-lost2;
-$color-link-hover: $color-lost3;
-
-$sidebar-padding: 220px;
+$black: #000000;
+$gray: #333333;
+$white: #FFF;
 
 html {
   box-sizing: border-box;
@@ -31,37 +24,80 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  //background-color: $color-lost4;
+  font-family: 'Antic Slab', Helvetica, Arial, sans-serif;
+  background-color: #FAFAFA;
 }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: $sidebar-padding;
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
 
-  padding: 20px;
-  background-color: $color-lost0;
-  color: $color-lost2;
+.heading-container {
+  width: 100%;
+  display: block;
+  height: 60px;
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(45deg, #0F1932, #45ACBF); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(45deg, #0F1932, #45ACBF); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(45deg, #0F1932, #45ACBF); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(135deg, #0F1932, #45ACBF); /* Standard syntax */
+  color: $white;
 
-  h1 {
-    color: $color-lost1;
+  padding: 0 16px 0 16px;
+
+  li {
+    display: inline;
+    float: left;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+  }
+
+  a {
+    color: inherit;
   }
 }
 
+.heading-name h2 {
+  display: inline;
+}
+
+nav {
+  width: 100%;
+  display: block;
+}
+
+.social {
+  float: right;
+  margin-top: 16px;
+  margin-right: 20px;
+}
 
 .main-content {
   top: 0;
   left: 0;
-
-  padding: 0px 20px 0px $sidebar-padding + 20px;
-  color: $color-lost0;
+  color: $gray;
 }
 
-.post-content {
-    width: 760px;
+.top-art {
+  text-align: center;
+  width: 100%;
+  height: 1px;
+  background: black;
+  color: white;
+}
+
+.post-list {
+  li {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .post-meta {
+    opacity: .6;
+  }
 }
 
 /* Typography
@@ -88,14 +124,19 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin-top: 0;
+  font-size: 16px;
+}
 
   /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: $color-link;
+  color: $black;
   text-decoration: none;
 }
 
 a:hover {
-  color: $color-link-hover; }
+  color: $gray;
+}

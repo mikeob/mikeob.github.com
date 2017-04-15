@@ -12,4 +12,3 @@ My initial color palette looked cool when all the colors were next to one anothe
 After some random tweaks, I decided to play with some icons. I heard pretty good things about [font-awesome](http://fontawesome.io/), so I gave that a try. I'm going to loosely try to categorize posts into a set, something along the lines of \{programming, design, math\}, at least at the start.
 
 It was surprisingly fun to go through and try to find an icon that made me think *design* or *math*. If there's nothing else we've learned from emojis, weird little icons can represent a lot (I'm looking at you, weirdly sexual eggplant)
-
