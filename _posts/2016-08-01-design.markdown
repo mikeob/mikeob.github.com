@@ -7,7 +7,7 @@ category: design
 
 Today, primarily the goal is to make the site look a little less plain/wonky.
 
-My initial color palette looked cool when all the colors were next to one another, but in actuality it didn't translate too well to a website. I want to keep the 'soft' aspects of the original palette, without it looking like a bad instagram filter.
+My initial color palette looked cool when all the colors were next to one another, but in actuality it didn't translate too well to a website. I want to keep the 'soft' aspects of the original palette, without it looking like a bad Instagram filter.
 
 After some random tweaks, I decided to play with some icons. I heard pretty good things about [font-awesome](http://fontawesome.io/), so I gave that a try. I'm going to loosely try to categorize posts into a set, something along the lines of \{programming, design, math\}, at least at the start.
 

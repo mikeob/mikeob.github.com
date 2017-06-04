@@ -1,0 +1,19 @@
+---
+layout: default
+title: Projects
+---
+
+<div class="post-container">
+  <ul class="post-list">
+      {% for post in site.projects %}
+        {% if post.title != 'Projects' %}
+          <li class="post-row">
+            <a class="post-link" href="{{post.url | prepend:site.baseurl }}">
+              {{ post.title }}
+            </a>
+            - {{ post.description }}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+</div>

@@ -6,7 +6,6 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li class="post-row">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         {% if post.category == "programming" %}
           <span class="fa-stack fa-lg">
             <i class="fa fa-square-o fa-stack-2x"></i>
@@ -28,6 +27,7 @@ layout: default
             <i class="fa fa fa-pencil-square-o fa-stack-1x"></i>
           </span>
         {% endif %}
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <span>{{ post.title }}</span>
         </a>
         <span class="post-meta">[{{ post.date | date: "%b %-d, %Y" }}]</span>
