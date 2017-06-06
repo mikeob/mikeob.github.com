@@ -14,7 +14,8 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link href="/favicon.ico" rel="icon" type="image/x-icon" />
 
+  <script src="/js/utils.js"></script>
   {% if page.js-file %}
-    <script src="/js/{{page.js-file}}"></script>
+    <script src="/js/{{page.js-file}}" defer></script>
   {% endif %}
 </head>
