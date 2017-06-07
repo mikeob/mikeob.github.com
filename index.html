@@ -27,11 +27,12 @@ layout: default
             <i class="fa fa fa-pencil-square-o fa-stack-1x"></i>
           </span>
         {% endif %}
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <span>{{ post.title }}</span>
-        </a>
         <span class="post-meta">[{{ post.date | date: "%b %-d, %Y" }}]</span>
-        {{ post.content }}
+        {{ post.excerpt }}
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+          Read more...
+        </a>
       </li>
     {% endfor %}
   </ul>

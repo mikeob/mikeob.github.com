@@ -31,5 +31,5 @@ My first goal will be to learn all the various fingerings associated with the
 different key signatures. For my own reference and perhaps your curiosity, I've
 attached them below.
 
-<img src="\images\violin-sharp-fingerings.png" width="600">
-<img src="\images\violin-flat-fingerings.png" width="600">
+<img class="img-centered" src="\images\violin-sharp-fingerings.png" width="600">
+<img class="img-centered" src="\images\violin-flat-fingerings.png" width="600">
