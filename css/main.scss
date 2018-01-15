@@ -68,7 +68,7 @@ img {
   width: 100%;
   display: block;
   height: 60px;
-  background: black; /* For browsers that do not support gradients */
+  background: black; 
   color: $white;
 
   padding: 0 16px 0 16px;
@@ -82,6 +82,7 @@ img {
 
   a {
     color: inherit;
+    border-bottom: none;
   }
   a:hover {
     color: inherit;
@@ -184,10 +185,10 @@ p {
   /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #217ac0;
+  color: ghostwhite;
+  border-bottom: 1px solid;
   text-decoration: none;
 }
 
 a:hover {
-  color: $gray;
 }
